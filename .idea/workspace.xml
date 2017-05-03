@@ -43,13 +43,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="container.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="container.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/container.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="229">
+              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addPhoto.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/addPhoto.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="69" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,71 +70,12 @@
       <file leaf-file-name="image.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/image.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
+            <state relative-caret-position="60">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="36" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#113#149#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="200">
-                <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-                <folding>
-                  <marker date="1493847457543" expanded="true" signature="13501:13831" ph="{&quot;version&quot;: &quot;0.2.0&quot;...}" />
-                  <marker date="1493847457543" expanded="true" signature="13545:13829" ph="[...]" />
-                  <marker date="1493847457543" expanded="true" signature="13546:13828" ph="{&quot;name&quot;: &quot;Chrome&quot;...}" />
-                  <marker date="1493847457543" expanded="true" signature="13776:13824" ph="{&quot;webpack:///src/*&quot;: &quot;${webRoot}/*&quot;...}" />
-                  <marker date="1493847457543" expanded="true" signature="15857:15888" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="15870:15886" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="15994:16059" ph="..." />
-                  <marker date="1493847457543" expanded="true" signature="16138:16193" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="16151:16191" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="17565:17585" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="17621:17678" ph="..." />
-                  <marker date="1493847457543" expanded="true" signature="17760:17865" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="17773:17863" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="18944:19010" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="19043:19330" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="23265:23315" ph="..." />
-                  <marker date="1493847457543" expanded="true" signature="23422:23509" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="23719:23759" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="26585:26850" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="26589:26783" ph="//..." />
-                  <marker date="1493847457543" expanded="true" signature="29213:29297" ph="..." />
-                  <marker date="1493847457543" expanded="true" signature="29298:29402" ph="//..." />
-                  <marker date="1493847457543" expanded="true" signature="34609:34756" ph="..." />
-                  <marker date="1493847457543" expanded="true" signature="34696:34749" ph="..." />
-                  <marker date="1493847457543" expanded="true" signature="35206:35232" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="42366:42495" ph="..." />
-                  <marker date="1493847457543" expanded="true" signature="42375:42495" ph="..." />
-                  <marker date="1493847457543" expanded="true" signature="44130:44226" ph="&lt;html/&gt;" />
-                  <marker date="1493847457543" expanded="true" signature="44149:44226" ph="&lt;head/&gt;" />
-                  <marker date="1493847457543" expanded="true" signature="44160:44226" ph="&lt;script/&gt;" />
-                  <marker date="1493847457543" expanded="true" signature="48113:48180" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="49044:49122" ph="..." />
-                  <marker date="1493847457543" expanded="true" signature="49161:49206" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="49161:49242" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="50087:50165" ph="..." />
-                  <marker date="1493847457543" expanded="true" signature="50204:50216" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="50204:50227" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="51138:51216" ph="..." />
-                  <marker date="1493847457543" expanded="true" signature="51254:51289" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="51254:51444" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="52871:52921" ph="..." />
-                  <marker date="1493847457543" expanded="true" signature="53394:53460" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="56169:56230" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="61414:61480" ph="{...}" />
-                  <marker date="1493847457543" expanded="true" signature="68325:68409" ph="{...}" />
-                </folding>
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -181,6 +134,7 @@
         <option value="$PROJECT_DIR$/src/components/imageTopPanel.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/image.js" />
+        <option value="$PROJECT_DIR$/src/components/addPhoto.js" />
         <option value="$PROJECT_DIR$/src/components/container.js" />
       </list>
     </option>
@@ -275,43 +229,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="store" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photos.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photos.loc" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photos.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photos.loc" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="actions" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -423,16 +341,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1493843949134</updated>
-      <workItem from="1493843950827" duration="3884000" />
+      <workItem from="1493843950827" duration="4773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3884000" />
+    <option name="totallyTimeSpent" value="4773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -443,7 +361,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -550,33 +468,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/container.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/imageTopPanel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
           <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/image.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#113#149#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -635,6 +532,37 @@
             </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/image.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#113#149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/addPhoto.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="69" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/container.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
