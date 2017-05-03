@@ -6,15 +6,24 @@ import store from './../store/store'
 
 import Image from './image'
 import AddPhoto from './addPhoto'
-import { setCountry } from './../actions/setCountry'
+import { setTooltipCoords } from '../actions/setTooltipCoordinate'
 
 const mapDispatchToProps = function (dispatch) {
     return {
         dispatch,
-        someHandler: function () {
+        someHandler: function (e) {
             console.log('store before', store.getState());
-            store.dispatch(setCountry(2));
-            console.log('store after', store.getState())
+
+            let coords = {
+                left: e.target.offsetLeft,
+                top: e.target.offsetTop
+            };
+
+            store.dispatch(setTooltipCoords(coords));
+            console.log('store after', store.getState());
+
+            // console.log('x', x);
+            // console.log('y', y);
         },
         uploadHandler: function (e) {
             e.preventDefault();
@@ -35,9 +44,13 @@ class Container extends Component {
             <div className="photos">
                 <AddPhoto uploadHandler={this.props.uploadHandler.bind(this)}/>
                 <div className="photos__list">
-
+                    <Image createTooltip={this.props.someHandler.bind(this)} />
+                    <Image createTooltip={this.props.someHandler.bind(this)} />
+                    <Image createTooltip={this.props.someHandler.bind(this)} />
+                    <Image createTooltip={this.props.someHandler.bind(this)} />
+                    <Image createTooltip={this.props.someHandler.bind(this)} />
                 </div>
-                <Image createTooltip={this.props.someHandler.bind(this)} />
+
                 <button onClick={this.props.someHandler.bind(this)}>click me</button>
             </div>
         )

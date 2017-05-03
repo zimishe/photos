@@ -5,9 +5,8 @@ import initialState from './../store/initialState'
 
 let reducer = function reducer(state = initialState, action) {
     switch (action.type) {
-        case 'COUNTRY_CHOSEN' : return {
-            selectedCountryId: action.selectedCountryId,
-            countries: state.countries
+        case 'TOOLTIP_COORDINATE_SET' : return {
+            tooltipCoords: action.tooltipCoords
         };
 
         default : return state
