@@ -13,6 +13,11 @@ let reducer = function reducer(state = initialState, action) {
             tooltipCoords: state.tooltipCoords,
             images: action.imagesToSet
         };
+        
+        case 'IMAGE_EDITED' : return {
+            tooltipCoords: state.tooltipCoords,
+            images: action.imagesToSet
+        };
 
         default : return state
     }

@@ -7,10 +7,10 @@ import React, { Component } from 'react'
 class EditPhoto extends Component {
     render() {
         return(
-            <form className="image__edit__form" onSubmit={this.props.imageEdit.bind(this)}>
+            <form className="image__edit__form" onSubmit={this.props.imageEdit.bind(this, this.props.imageID)}>
                 <label>
                     <span>Chose new image</span>
-                    <input type="file" name="photo_edit" accept=".jpg"/>
+                    <input type="file" name="photo_edit" accept=".jpg, .png"/>
                 </label>
                 <button>Send</button>
             </form>

@@ -9,7 +9,10 @@ import AddPhoto from './addPhoto'
 import { setTooltipCoords } from '../actions/setTooltipCoordinate'
 import { deleteImage } from '../actions/deleteImage'
 
+// eslint-disable-next-line
 import { deleteRequest } from '../actions/support/requests'
+// eslint-disable-next-line
+import { editImageRequest } from '../actions/support/requests'
 
 
 const mapDispatchToProps = function (dispatch) {
@@ -38,14 +41,14 @@ const mapDispatchToProps = function (dispatch) {
             store.dispatch(deleteImage(imagesToSet));
         },
 
-        imageEditHandler: function (e) {
+        imageEditHandler: function (id, e) {
             e.preventDefault();
-            // console.log('ns', newSrc);
-
-            let newSrc = new FormData();
-
-            newSrc.append('name', {govno: 'ebanoe'});
-            console.log('ns', newSrc)
+            
+            let dataToSend = new FormData(e.target);
+            
+            dataToSend.append('imageID', id);
+            
+            editImageRequest(dataToSend);
         },
 
         imageUploadHandler: function (e) {

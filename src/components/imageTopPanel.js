@@ -14,7 +14,7 @@ class ImageTopPanel extends Component {
                 <a className="image__show-preview">Preview</a>
                 <div className="image__edit">
                     <a className="image__edit--toggle">Edit</a>
-                    <EditPhoto imageEdit={this.props.imageEdit} />
+                    <EditPhoto imageEdit={this.props.imageEdit} imageID={this.props.imageID} />
                 </div>
                 <a className="image__remove" onClick={this.props.imageDelete}>X</a>
             </div>

@@ -15,6 +15,7 @@ class Image extends Component {
                 <ImageTopPanel
                     imageDelete={this.props.imageDelete}
                     imageEdit={this.props.imageEdit}
+                    imageID={this.props.id}
                 />
                 <a className="image__create-tooltip" onClick={this.props.createTooltip}>T</a>
             </div>
