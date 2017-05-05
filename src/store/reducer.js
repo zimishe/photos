@@ -10,12 +10,10 @@ let reducer = function reducer(state = initialState, action) {
         };
 
         case 'IMAGE_DELETED' : return {
-            tooltipCoords: state.tooltipCoords,
             images: action.imagesToSet
         };
         
         case 'IMAGE_EDITED' : return {
-            tooltipCoords: state.tooltipCoords,
             images: action.imagesToSet
         };
 

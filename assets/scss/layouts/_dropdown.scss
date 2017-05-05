@@ -10,6 +10,16 @@
     background: #fff;
     position: relative;
     object-fit: contain;
+    
+    &:before {
+        content: '';
+        display: block;
+        @include absolute();
+        background: rgba(255, 255, 255, .6);
+        transition: all .2s ease;
+        opacity: 0;
+        visibility: hidden;
+    }
 
     &:nth-of-type(3) {
         .image__create-tooltip {
@@ -66,11 +76,25 @@
             }
         }
     }
+    
+    &.image__tooltip--selecting {
+        cursor: url('./../img/cursor.png'), auto;
+        
+        &:before {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }
 
 .image__create-tooltip {
     width: 30px;
     height: 30px;
-    display: block;
+    display: flex;
     position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
 }

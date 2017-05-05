@@ -6,6 +6,7 @@ import store from './../store/store'
 
 import Image from './image'
 import AddPhoto from './addPhoto'
+// eslint-disable-next-line
 import { setTooltipCoords } from '../actions/setTooltipCoordinate'
 import { deleteImage } from '../actions/deleteImage'
 
@@ -13,24 +14,16 @@ import { deleteImage } from '../actions/deleteImage'
 import { deleteRequest } from '../actions/support/requests'
 // eslint-disable-next-line
 import { editImageRequest } from '../actions/support/requests'
+import { activateTooltipArea } from '../actions/activateTooltipArea'
+
+import Tooltip from './tooltip'
 
 
 const mapDispatchToProps = function (dispatch) {
     return {
         dispatch,
-        someHandler: function (e) {
-            console.log('store before', store.getState());
-
-            let coords = {
-                left: e.target.offsetLeft,
-                top: e.target.offsetTop
-            };
-
-            store.dispatch(setTooltipCoords(coords));
-            console.log('store after', store.getState());
-
-            // console.log('x', x);
-            // console.log('y', y);
+        createTooltipHandler: function (i, id, e) {
+            activateTooltipArea(i, id, e.target.parentNode);
         },
 
         imageDeleteHandler: function (id, e) {
@@ -66,7 +59,8 @@ const mapStateToProps = function () {
 
 class Container extends Component {
     render() {
-        let images = store.getState().images;
+        let images = store.getState().images,
+            tooltips = store.getState().tooltips;
 
         return (
             <div className="photos">
@@ -77,7 +71,8 @@ class Container extends Component {
                             <Image key={i}
                                    src={el.src}
                                    id={el.id}
-                                   createTooltip={this.props.someHandler.bind(this)}
+                                   tooltips={tooltips[i]}
+                                   createTooltip={this.props.createTooltipHandler.bind(this, i)}
                                    imageDelete={this.props.imageDeleteHandler.bind(this, el.id)}
                                    imageEdit={this.props.imageEditHandler}
                             />
@@ -85,7 +80,7 @@ class Container extends Component {
                     }
                 </div>
 
-                <button onClick={this.props.someHandler.bind(this)}>click me</button>
+                <button onClick={this.props.createTooltipHandler.bind(this)}>click me</button>
             </div>
         )
     }

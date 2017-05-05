@@ -10,19 +10,40 @@ const initialState = {
     images: [
         {
             id: 1,
-            src: imgOne,
-            tooltips: []
+            src: imgOne
         },
         {
             id: 12,
-            src: imgTwo,
-            tooltips: []
+            src: imgTwo
         },
         {
             id: 16,
-            src: imgThree,
-            tooltips: []
+            src: imgThree
         }
+    ],
+    
+    tooltips: [
+        {
+            id: 1,
+            coords: [
+                
+            ]
+            
+        },
+        {
+            id: 12,
+            coords: [
+                
+            ]
+
+        },
+        {
+            id: 1,
+            coords: [
+                
+            ]
+
+        },
     ]
 };
 
