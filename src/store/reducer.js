@@ -9,6 +9,11 @@ let reducer = function reducer(state = initialState, action) {
             tooltipCoords: action.tooltipCoords
         };
 
+        case 'IMAGE_DELETED' : return {
+            tooltipCoords: state.tooltipCoords,
+            images: action.imagesToSet
+        };
+
         default : return state
     }
 };

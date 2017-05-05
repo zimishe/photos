@@ -2,28 +2,26 @@
  * Created by eugene on 03.05.2017.
  */
 
+import imgOne from '../../assets/img/1.jpg'
+import imgTwo from '../../assets/img/2.JPG'
+import imgThree from '../../assets/img/3.png'
+
 const initialState = {
-    selectedCountryId: '',
-    countries: [
+    images: [
         {
-            id: '1',
-            name: 'Ukraine'
+            id: 1,
+            src: imgOne,
+            tooltips: []
         },
         {
-            id: '2',
-            name: 'USA'
+            id: 12,
+            src: imgTwo,
+            tooltips: []
         },
         {
-            id: '3',
-            name: 'England'
-        },
-        {
-            id: '4',
-            name: 'Spain'
-        },
-        {
-            id: '5',
-            name: 'Poland'
+            id: 16,
+            src: imgThree,
+            tooltips: []
         }
     ]
 };

@@ -11,7 +11,11 @@ class Image extends Component {
     render() {
         return (
             <div className="image">
-                <ImageTopPanel />
+                <img src={this.props.src} alt="some" />
+                <ImageTopPanel
+                    imageDelete={this.props.imageDelete}
+                    imageEdit={this.props.imageEdit}
+                />
                 <a className="image__create-tooltip" onClick={this.props.createTooltip}>T</a>
             </div>
         )
