@@ -25,25 +25,18 @@ const initialState = {
     tooltips: [
         {
             id: 1,
-            coords: [
-                
-            ]
+            coords: []
             
         },
         {
             id: 12,
-            coords: [
-                
-            ]
+            coords: []
 
         },
         {
             id: 1,
-            coords: [
-                
-            ]
-
-        },
+            coords: []
+        }
     ]
 };
 

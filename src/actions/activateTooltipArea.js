@@ -3,6 +3,7 @@
  */
 
 import store from './../store/store'
+import { setTooltipCoords } from './../actions/setTooltipCoordinate'
 
 export function activateTooltipArea(i, id, target) {
     let images = Array.from(document.querySelectorAll('.image'));
@@ -31,9 +32,7 @@ export function activateTooltipArea(i, id, target) {
 
         dataToSet[i] = tooltip;
         
-        console.log('ttip', tooltip);
-        console.log('dsss', dataToSet[i]);
-        
+        store.dispatch(setTooltipCoords(dataToSet));
         console.log('store', store.getState().tooltips);
     });
 }

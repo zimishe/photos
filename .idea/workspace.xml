@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e224c1d2-39f1-4fb1-b4d1-9f8f83ab0c7e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/actions/activateTooltipArea.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/tooltip.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/layouts/_dropdown.scss" afterPath="$PROJECT_DIR$/assets/scss/layouts/_dropdown.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/container.js" afterPath="$PROJECT_DIR$/src/components/container.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/image.js" afterPath="$PROJECT_DIR$/src/components/image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/activateTooltipArea.js" afterPath="$PROJECT_DIR$/src/actions/activateTooltipArea.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/setTooltipCoordinate.js" afterPath="$PROJECT_DIR$/src/actions/setTooltipCoordinate.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/initialState.js" afterPath="$PROJECT_DIR$/src/store/initialState.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/reducer.js" afterPath="$PROJECT_DIR$/src/store/reducer.js" />
     </list>
@@ -31,13 +27,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="activateTooltipArea.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activateTooltipArea.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/actions/activateTooltipArea.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="34" column="40" lean-forward="false" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+            <state relative-caret-position="424">
+              <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#43#79#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/src/actions/setTooltipCoordinate.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="46" />
+              <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -56,8 +53,8 @@
       <file leaf-file-name="reducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            <state relative-caret-position="144">
+              <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -65,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initialState.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="initialState.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/store/initialState.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+            <state relative-caret-position="532">
+              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#45#88#0" expanded="true" />
@@ -120,7 +117,6 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/addPhoto.js" />
-        <option value="$PROJECT_DIR$/src/actions/setTooltipCoordinate.js" />
         <option value="$PROJECT_DIR$/src/actions/editImageImage.js" />
         <option value="$PROJECT_DIR$/src/components/imageTopPanel.js" />
         <option value="$PROJECT_DIR$/src/actions/editImage.js" />
@@ -129,11 +125,12 @@
         <option value="$PROJECT_DIR$/src/actions/support/requests.js" />
         <option value="$PROJECT_DIR$/assets/scss/layouts/_dropdown.scss" />
         <option value="$PROJECT_DIR$/src/components/tooltip.js" />
-        <option value="$PROJECT_DIR$/src/store/reducer.js" />
         <option value="$PROJECT_DIR$/src/components/image.js" />
         <option value="$PROJECT_DIR$/src/components/container.js" />
-        <option value="$PROJECT_DIR$/src/store/initialState.js" />
+        <option value="$PROJECT_DIR$/src/actions/setTooltipCoordinate.js" />
         <option value="$PROJECT_DIR$/src/actions/activateTooltipArea.js" />
+        <option value="$PROJECT_DIR$/src/store/reducer.js" />
+        <option value="$PROJECT_DIR$/src/store/initialState.js" />
       </list>
     </option>
   </component>
@@ -460,12 +457,12 @@
       <workItem from="1493843950827" duration="6534000" />
       <workItem from="1493879628675" duration="774000" />
       <workItem from="1493982468257" duration="8645000" />
-      <workItem from="1493991135764" duration="4995000" />
+      <workItem from="1493991135764" duration="6286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28702000" />
+    <option name="totallyTimeSpent" value="29993000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -890,24 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/setTooltipCoordinate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/image.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -926,23 +905,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/initialState.js">
+    <entry file="file://$PROJECT_DIR$/src/actions/setTooltipCoordinate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        <state relative-caret-position="72">
+          <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#45#88#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/activateTooltipArea.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="34" column="40" lean-forward="false" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+        <state relative-caret-position="424">
+          <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#43#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/initialState.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#45#88#0" expanded="true" />
           </folding>
         </state>
       </provider>

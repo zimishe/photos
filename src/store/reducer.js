@@ -6,7 +6,8 @@ import initialState from './../store/initialState'
 let reducer = function reducer(state = initialState, action) {
     switch (action.type) {
         case 'TOOLTIP_COORDINATE_SET' : return {
-            tooltipCoords: action.tooltipCoords
+            images: state.images,
+            tooltips: action.tooltipsToSet
         };
 
         case 'IMAGE_DELETED' : return {
