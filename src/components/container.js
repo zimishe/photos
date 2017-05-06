@@ -17,9 +17,6 @@ import { editImageRequest } from '../actions/support/requests'
 import { activateTooltipArea } from '../actions/activateTooltipArea'
 import { editTooltipText } from '../actions/editTooltipText'
 
-import Tooltip from './tooltip'
-
-
 const mapDispatchToProps = function (dispatch) {
     return {
         dispatch,

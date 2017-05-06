@@ -10,17 +10,26 @@ export function editTooltipText(i, id, e) {
     let tooltips = store.getState().tooltips,
         dataToSet = [...tooltips],
         textToSet = e.target.firstChild.value,
+        parentImage = document.querySelector('.image__tooltip--adding-text'),
+        // eslint-disable-next-line
         formData = new FormData(e.target),
         tooltip = {};
 
-    let coords = dataToSet[i].coords;
+        // console.log('txxx', dataToSet[i]);
+
+    let coords = dataToSet[i].coords,
+        text = dataToSet[i].text;
+
+    text.push(textToSet);
 
     tooltip.id = id;
     tooltip.coords = coords;
-    tooltip.text = textToSet;
+    tooltip.text = text;
 
     dataToSet[i] = tooltip;
     store.dispatch(setTooltipCoords(dataToSet));
+
+    parentImage.classList.remove('image__tooltip--adding-text');
 
     console.log('store2', store.getState().tooltips);
 }

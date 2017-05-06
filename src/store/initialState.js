@@ -26,17 +26,17 @@ const initialState = {
         {
             id: 1,
             coords: [],
-            text: ''
+            text: []
         },
         {
             id: 12,
             coords: [],
-            text: ''
+            text: []
         },
         {
             id: 1,
             coords: [],
-            text: ''
+            text: []
         }
     ]
 };

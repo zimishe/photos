@@ -24,7 +24,6 @@ export function activateTooltipArea(i, id, target) {
         };
 
         if (!target.classList.contains('image__tooltip--adding-text')) {
-
             coords.push(coordsToAdd);
 
             target.classList.add('image__tooltip--adding-text');
@@ -32,10 +31,7 @@ export function activateTooltipArea(i, id, target) {
 
             tooltip.id = id;
             tooltip.coords = coords;
-
-            let form = document.getElementsByClassName('.image__tooltip--adding-text .image__tooltip__text');
-
-            console.log('fl', form);
+            tooltip.text = dataToSet[i].text;
 
             dataToSet[i] = tooltip;
 
