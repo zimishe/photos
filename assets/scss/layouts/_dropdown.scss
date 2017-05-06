@@ -85,6 +85,19 @@
             visibility: visible;
         }
     }
+
+    &__tooltips {
+        @include absolute();
+    }
+
+    &__tooltip {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #000;
+        background: #fff;
+    }
 }
 
 .image__create-tooltip {

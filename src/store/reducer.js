@@ -11,11 +11,13 @@ let reducer = function reducer(state = initialState, action) {
         };
 
         case 'IMAGE_DELETED' : return {
-            images: action.imagesToSet
+            images: action.imagesToSet,
+            tooltips: state.tooltips
         };
         
         case 'IMAGE_EDITED' : return {
-            images: action.imagesToSet
+            images: action.imagesToSet,
+            tooltips: state.tooltips
         };
 
         default : return state

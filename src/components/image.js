@@ -10,23 +10,16 @@ import Tooltip from './tooltip'
 
 class Image extends Component {
     render() {
-        let id = this.props.id;
-        
-        function checkTooltips() {
-            let images = store.getState().images,
-                tooltipsData = images.filter(el => el.id === id)[0];
-                
-                // console.log('tdata', tooltipsData);
-                
-            if (tooltipsData.length > 0) {
-                tooltipsData.map(el => <Tooltip coords={el.coords} />)                
-            }
-        }
-        
+        let tooltips = this.props.tooltips,
+            coords = tooltips.coords;
+
         return (
             <div className="image">
                 <div className="image__tooltips">
-                    { checkTooltips() }
+                    { (coords.length > 0) && coords.map((el, i) =>
+                        <Tooltip key={i}
+                                 coords={el} />)
+                    }
                 </div>
                 <img src={this.props.src} alt="some" />
                 <ImageTopPanel
