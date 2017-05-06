@@ -14,7 +14,7 @@ export function activateTooltipArea(i, id, target) {
 
     let imagesData = store.getState().tooltips,
         dataToSet = [...imagesData],
-        coords = [],
+        coords = dataToSet[i].coords,
         tooltip = {};
     
     target.addEventListener('click', (e) => {

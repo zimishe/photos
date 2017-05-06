@@ -13,12 +13,15 @@ class Image extends Component {
         let tooltips = this.props.tooltips,
             coords = tooltips.coords;
 
+        console.log('tp', tooltips);
+
         return (
             <div className="image">
                 <div className="image__tooltips">
                     {(coords.length > 0) && coords.map((el, i) =>
                         <Tooltip key={i}
                                  coords={el}
+                                 text={tooltips.text[i]}
                                  editTooltipText={this.props.editTooltipText}
                         />
                     )}

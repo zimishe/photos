@@ -18,6 +18,9 @@ class Tooltip extends Component {
                     <input type="text" name="tooltip_text" required />
                     <button>Add</button>
                 </form>
+                <div className="image__tooltip__preview">
+                    <p>{this.props.text}</p>
+                </div>
             </div>
         )
     }

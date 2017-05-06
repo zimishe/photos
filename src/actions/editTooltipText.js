@@ -30,6 +30,7 @@ export function editTooltipText(i, id, e) {
     store.dispatch(setTooltipCoords(dataToSet));
 
     parentImage.classList.remove('image__tooltip--adding-text');
+    e.target.classList.add('image__tooltip__text--hidden');
 
     console.log('store2', store.getState().tooltips);
 }
