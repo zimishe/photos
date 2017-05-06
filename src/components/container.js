@@ -40,15 +40,20 @@ const mapDispatchToProps = function (dispatch) {
             e.preventDefault();
             
             let dataToSend = new FormData(e.target);
-            
+
             dataToSend.append('imageID', id);
-            
             editImageRequest(dataToSend);
         },
 
         imageUploadHandler: function (e) {
             e.preventDefault();
             console.log('upload handler');
+        },
+
+        previewTooltips: function() {
+            let image = document.querySelector('.image.image__tooltip--selecting');
+
+            image.classList.remove('image__tooltip--selecting', 'image__tooltip--adding-text');
         }
     }
 };
@@ -78,12 +83,11 @@ class Container extends Component {
                                    editTooltipText={this.props.editTooltipTextHandler.bind(this, i, el.id)}
                                    imageDelete={this.props.imageDeleteHandler.bind(this, el.id)}
                                    imageEdit={this.props.imageEditHandler}
+                                   previewTooltips={this.props.previewTooltips}
                             />
                         )
                     }
                 </div>
-
-                <button onClick={this.props.createTooltipHandler.bind(this)}>click me</button>
             </div>
         )
     }

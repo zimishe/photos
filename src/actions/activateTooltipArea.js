@@ -8,8 +8,10 @@ import { setTooltipCoords } from './../actions/setTooltipCoordinate'
 export function activateTooltipArea(i, id, target) {
     let images = Array.from(document.querySelectorAll('.image'));
     
-    images.forEach(image => image.classList.remove('image__tooltip--selecting'));
-    
+    // images.forEach(image => image.classList.remove('image__tooltip--selecting'));
+
+    target.classList.contains('image__tooltip--selecting') ?
+        target.classList.remove('image__tooltip--selecting') :
     target.classList.add('image__tooltip--selecting');
 
     let imagesData = store.getState().tooltips,
@@ -19,11 +21,12 @@ export function activateTooltipArea(i, id, target) {
     
     target.addEventListener('click', (e) => {
         let coordsToAdd = {
-            left: e.offsetX,
-            top: e.offsetY
+            left: e.offsetX - 10,
+            top: e.offsetY - 10
         };
 
-        if (!target.classList.contains('image__tooltip--adding-text')) {
+        if (!target.classList.contains('image__tooltip--adding-text') &&
+            !e.target.classList.contains('image__create-tooltip')) {
             coords.push(coordsToAdd);
 
             target.classList.add('image__tooltip--adding-text');

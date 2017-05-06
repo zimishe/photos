@@ -13,8 +13,6 @@ class Image extends Component {
         let tooltips = this.props.tooltips,
             coords = tooltips.coords;
 
-        console.log('tp', tooltips);
-
         return (
             <div className="image">
                 <div className="image__tooltips">
@@ -30,6 +28,7 @@ class Image extends Component {
                 <ImageTopPanel
                     imageDelete={this.props.imageDelete}
                     imageEdit={this.props.imageEdit}
+                    previewTooltips={this.props.previewTooltips}
                     imageID={this.props.id}
                 />
                 <a className="image__create-tooltip" onClick={this.props.createTooltip.bind(this, this.props.id)}>T</a>

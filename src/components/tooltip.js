@@ -6,6 +6,18 @@ import React, { Component } from 'react'
 
 class Tooltip extends Component {
     render() {
+        let text = this.props.text;
+
+        function checkText() {
+            if (text !== undefined) {
+                return (
+                    <div className="image__tooltip__preview">
+                        <p>{text}</p>
+                    </div>
+                )
+            }
+        }
+
         let style = {
             left: this.props.coords.left+'px',
             top: this.props.coords.top+'px'
@@ -15,12 +27,10 @@ class Tooltip extends Component {
             <div className="image__tooltip__wrap" style={style}>
                 <div className="image__tooltip"></div>
                 <form className="image__tooltip__text" onSubmit={this.props.editTooltipText}>
-                    <input type="text" name="tooltip_text" required />
+                    <input type="text" name="tooltip_text" required autoFocus />
                     <button>Add</button>
                 </form>
-                <div className="image__tooltip__preview">
-                    <p>{this.props.text}</p>
-                </div>
+                { checkText() }
             </div>
         )
     }

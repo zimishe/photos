@@ -11,7 +11,7 @@ class ImageTopPanel extends Component {
     render() {
         return (
             <div className="image__controls">
-                <a className="image__show-preview">Preview</a>
+                <a className="image__show-preview" onClick={this.props.previewTooltips}>Preview</a>
                 <div className="image__edit">
                     <a className="image__edit--toggle">Edit</a>
                     <EditPhoto imageEdit={this.props.imageEdit} imageID={this.props.imageID} />

@@ -78,11 +78,15 @@
     }
     
     &.image__tooltip--selecting {
-        cursor: url('./../img/cursor.png'), auto;
+        //cursor: url('./../img/cursor.png'), auto;
         
         &:before {
             opacity: 1;
             visibility: visible;
+        }
+
+        .image__controls {
+            display: none;
         }
 
         &.image__tooltip--adding-text {
