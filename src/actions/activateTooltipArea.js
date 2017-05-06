@@ -23,16 +23,24 @@ export function activateTooltipArea(i, id, target) {
             top: e.offsetY
         };
 
-        coords.push(coordsToAdd);
-        
-        // let targetData = imagesData.filter(el => el.id === id);
-        
-        tooltip.id = id;
-        tooltip.coords = coords;
+        if (!target.classList.contains('image__tooltip--adding-text')) {
 
-        dataToSet[i] = tooltip;
-        
-        store.dispatch(setTooltipCoords(dataToSet));
-        console.log('store', store.getState().tooltips);
+            coords.push(coordsToAdd);
+
+            target.classList.add('image__tooltip--adding-text');
+            // let targetData = imagesData.filter(el => el.id === id);
+
+            tooltip.id = id;
+            tooltip.coords = coords;
+
+            let form = document.getElementsByClassName('.image__tooltip--adding-text .image__tooltip__text');
+
+            console.log('fl', form);
+
+            dataToSet[i] = tooltip;
+
+            store.dispatch(setTooltipCoords(dataToSet));
+        }
+        // console.log('store', store.getState().tooltips);
     });
 }

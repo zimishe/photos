@@ -16,10 +16,12 @@ class Image extends Component {
         return (
             <div className="image">
                 <div className="image__tooltips">
-                    { (coords.length > 0) && coords.map((el, i) =>
+                    {(coords.length > 0) && coords.map((el, i) =>
                         <Tooltip key={i}
-                                 coords={el} />)
-                    }
+                                 coords={el}
+                                 editTooltipText={this.props.editTooltipText}
+                        />
+                    )}
                 </div>
                 <img src={this.props.src} alt="some" />
                 <ImageTopPanel

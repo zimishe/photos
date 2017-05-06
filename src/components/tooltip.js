@@ -14,8 +14,8 @@ class Tooltip extends Component {
         return (
             <div className="image__tooltip__wrap" style={style}>
                 <div className="image__tooltip"></div>
-                <form className="image__tooltip__text">
-                    <input type="text" name="tooltip_text" />
+                <form className="image__tooltip__text" onSubmit={this.props.editTooltipText}>
+                    <input type="text" name="tooltip_text" required />
                     <button>Add</button>
                 </form>
             </div>

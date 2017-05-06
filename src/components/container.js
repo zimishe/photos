@@ -15,6 +15,7 @@ import { deleteRequest } from '../actions/support/requests'
 // eslint-disable-next-line
 import { editImageRequest } from '../actions/support/requests'
 import { activateTooltipArea } from '../actions/activateTooltipArea'
+import { editTooltipText } from '../actions/editTooltipText'
 
 import Tooltip from './tooltip'
 
@@ -22,6 +23,10 @@ import Tooltip from './tooltip'
 const mapDispatchToProps = function (dispatch) {
     return {
         dispatch,
+        editTooltipTextHandler: function (i, id, e) {
+            editTooltipText(i, id, e);
+        },
+
         createTooltipHandler: function (i, id, e) {
             activateTooltipArea(i, id, e.target.parentNode);
         },
@@ -73,6 +78,7 @@ class Container extends Component {
                                    id={el.id}
                                    tooltips={tooltips[i]}
                                    createTooltip={this.props.createTooltipHandler.bind(this, i)}
+                                   editTooltipText={this.props.editTooltipTextHandler.bind(this, i, el.id)}
                                    imageDelete={this.props.imageDeleteHandler.bind(this, el.id)}
                                    imageEdit={this.props.imageEditHandler}
                             />

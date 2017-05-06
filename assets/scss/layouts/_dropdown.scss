@@ -84,6 +84,10 @@
             opacity: 1;
             visibility: visible;
         }
+
+        &.image__tooltip--adding-text {
+            cursor: auto;
+        }
     }
 
     &__tooltips {
@@ -91,12 +95,21 @@
     }
 
     &__tooltip {
-        position: absolute;
         width: 20px;
         height: 20px;
         border-radius: 50%;
         border: 2px solid #000;
         background: #fff;
+
+        &__wrap {
+            position: absolute;
+        }
+
+        &__text {
+            position: absolute;
+            left: 30px;
+            top: 0;
+        }
     }
 }
 
