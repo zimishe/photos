@@ -24,7 +24,7 @@ export function editTooltipText(i, id, e) {
 
     ind.classList.add('image__editing--current');
 
-    let index = Array.from(document.querySelectorAll('.image__editing--current .image__tooltip__text')).indexOf(e.target)
+    let index = Array.from(document.querySelectorAll('.image__editing--current .image__tooltip__text')).indexOf(e.target);
 
     if (parentEditing == null) {
         text.push(textToSet);
@@ -41,8 +41,6 @@ export function editTooltipText(i, id, e) {
     dataToSet[i] = tooltip;
 
     store.dispatch(setTooltipCoords(dataToSet));
-
-    console.log('str', store.getState().tooltips);
 
     (parentImage !== null) && parentImage.classList.remove('image__tooltip--adding-text');
     (parentEditing !== null) && parentEditing.classList.remove('image__tooltip--editing');
