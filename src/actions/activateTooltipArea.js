@@ -9,6 +9,7 @@ export function activateTooltipArea(i, id, target) {
     let images = Array.from(document.querySelectorAll('.image'));
     
     // images.forEach(image => image.classList.remove('image__tooltip--selecting'));
+    
 
     target.classList.contains('image__tooltip--selecting') ?
         target.classList.remove('image__tooltip--selecting') :
@@ -24,9 +25,10 @@ export function activateTooltipArea(i, id, target) {
             left: e.offsetX - 10,
             top: e.offsetY - 10
         };
-
+        
         if (!target.classList.contains('image__tooltip--adding-text') &&
-            !e.target.classList.contains('image__create-tooltip')) {
+            !e.target.parentNode.classList.contains('image__show-preview') &&
+                target.classList.contains('image__tooltip--selecting'))  {
             coords.push(coordsToAdd);
 
             target.classList.add('image__tooltip--adding-text');

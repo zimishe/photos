@@ -50,10 +50,24 @@ const mapDispatchToProps = function (dispatch) {
             console.log('upload handler');
         },
 
-        previewTooltips: function() {
-            let image = document.querySelector('.image.image__tooltip--selecting');
-
-            image.classList.remove('image__tooltip--selecting', 'image__tooltip--adding-text');
+        previewTooltips: function(e) {
+            let image = document.querySelector('.image.image__tooltip--selecting'),
+                previewMode = document.querySelector('.image.image__tooltip--vsisble');
+            
+            if (image !== null) {
+                image.classList.remove('image__tooltip--selecting', 'image__tooltip--adding-text');
+                image.classList.add('image__tooltip--vsisble');
+            }
+            
+            if (previewMode !== null) {
+                // previewMode.classList.remove('image__tooltip--vsisble');
+            }
+        },
+        
+        editFormToggle: function (e) {
+            let form = e.target.parentNode.parentNode.lastChild;
+            
+            form.classList.toggle('image__edit__form--visible');
         }
     }
 };
@@ -84,6 +98,7 @@ class Container extends Component {
                                    imageDelete={this.props.imageDeleteHandler.bind(this, el.id)}
                                    imageEdit={this.props.imageEditHandler}
                                    previewTooltips={this.props.previewTooltips}
+                                   editFormToggle={this.props.editFormToggle}
                             />
                         )
                     }

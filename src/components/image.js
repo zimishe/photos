@@ -7,6 +7,7 @@ import store from './../store/store'
 
 import ImageTopPanel from './imageTopPanel'
 import Tooltip from './tooltip'
+import AddIcon from '../../assets/img/add_tooltip.png'
 
 class Image extends Component {
     render() {
@@ -29,9 +30,10 @@ class Image extends Component {
                     imageDelete={this.props.imageDelete}
                     imageEdit={this.props.imageEdit}
                     previewTooltips={this.props.previewTooltips}
+                    editFormToggle={this.props.editFormToggle}
                     imageID={this.props.id}
                 />
-                <a className="image__create-tooltip" onClick={this.props.createTooltip.bind(this, this.props.id)}>T</a>
+                <a className="image__create-tooltip" title="Add Tooltip" onClick={this.props.createTooltip.bind(this, this.props.id)}>+</a>
             </div>
         )
     }

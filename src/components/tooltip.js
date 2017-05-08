@@ -25,10 +25,10 @@ class Tooltip extends Component {
 
         return (
             <div className="image__tooltip__wrap" style={style}>
-                <div className="image__tooltip"></div>
+                <div className="image__tooltip" />
                 <form className="image__tooltip__text" onSubmit={this.props.editTooltipText}>
                     <input type="text" name="tooltip_text" required autoFocus />
-                    <button>Add</button>
+                    <button>+</button>
                 </form>
                 { checkText() }
             </div>
