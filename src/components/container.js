@@ -52,16 +52,27 @@ const mapDispatchToProps = function (dispatch) {
 
         previewTooltips: function(e) {
             let image = document.querySelector('.image.image__tooltip--selecting'),
-                previewMode = document.querySelector('.image.image__tooltip--vsisble');
+                previewMode = document.querySelector('.image.image__tooltip--visible');
             
             if (image !== null) {
                 image.classList.remove('image__tooltip--selecting', 'image__tooltip--adding-text');
-                image.classList.add('image__tooltip--vsisble');
+                // image.classList.add('image__tooltip--visible');
+            }
+
+            function getParent(target) {
+
+                if (target.classList.contains('image')) {
+                    target.classList.add('image__tooltip--visible')
+                }   else {
+                    getParent(target.parentNode);
+                }
             }
             
+            getParent(e.target);
+            
             if (previewMode !== null) {
-                // previewMode.classList.remove('image__tooltip--vsisble');
-            }
+                previewMode.classList.remove('image__tooltip--visible');
+            }   
         },
         
         editFormToggle: function (e) {
