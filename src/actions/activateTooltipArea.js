@@ -6,11 +6,6 @@ import store from './../store/store'
 import { setTooltipCoords } from './../actions/setTooltipCoordinate'
 
 export function activateTooltipArea(i, id, target) {
-    let images = Array.from(document.querySelectorAll('.image'));
-    
-    // images.forEach(image => image.classList.remove('image__tooltip--selecting'));
-    
-
     target.classList.contains('image__tooltip--selecting') ?
         target.classList.remove('image__tooltip--selecting') :
     target.classList.add('image__tooltip--selecting');
@@ -25,14 +20,22 @@ export function activateTooltipArea(i, id, target) {
             left: e.offsetX - 10,
             top: e.offsetY - 10
         };
-        
+
+        console.log('et', e.target.parentNode)
+
         if (!target.classList.contains('image__tooltip--adding-text') &&
             !e.target.parentNode.classList.contains('image__show-preview') &&
+            !e.target.parentNode.classList.contains('image__edit--toggle') &&
+            !e.target.parentNode.classList.contains('image__remove') &&
+            (e.target.parentNode.nodeName !== 'LABEL') &&
+            !e.target.classList.contains('image__tooltip') &&
+            (e.target.name !== 'tooltip_text') &&
+            (e.target.nodeName !== 'BUTTON') &&
                 target.classList.contains('image__tooltip--selecting'))  {
+
             coords.push(coordsToAdd);
 
             target.classList.add('image__tooltip--adding-text');
-            // let targetData = imagesData.filter(el => el.id === id);
 
             tooltip.id = id;
             tooltip.coords = coords;
@@ -42,6 +45,10 @@ export function activateTooltipArea(i, id, target) {
 
             store.dispatch(setTooltipCoords(dataToSet));
         }
-        // console.log('store', store.getState().tooltips);
+
+        if (e.target.classList.contains('image__tooltip')) {
+            e.target.parentNode.classList.add('image__tooltip--editing');
+            e.target.nextSibling.classList.remove('image__tooltip__text--hidden');
+        }
     });
 }

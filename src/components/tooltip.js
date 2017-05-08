@@ -27,8 +27,10 @@ class Tooltip extends Component {
             <div className="image__tooltip__wrap" style={style}>
                 <div className="image__tooltip" />
                 <form className="image__tooltip__text" onSubmit={this.props.editTooltipText}>
-                    <input type="text" name="tooltip_text" required autoFocus />
-                    <button>+</button>
+                    <input type="text" name="tooltip_text"
+                           required autoFocus
+                           defaultValue={(text !== undefined) ? text : ''} />
+                    <button>Save</button>
                 </form>
                 { checkText() }
             </div>

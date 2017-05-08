@@ -3,14 +3,15 @@
  */
 
 import React, { Component } from 'react'
-// eslint-disable-next-line
-import store from './../store/store'
+
+
 
 class AddPhoto extends Component {
     render() {
         return(
-            <form id="uploadPhoto" onSubmit={this.props.uploadHandler}>
+            <form id="uploadPhoto" className="photos__upload" onSubmit={this.props.uploadHandler}>
                 <label>
+                    Choose new image
                     <input type="file" name="form_photo" />
                 </label>
                 <button>Send</button>

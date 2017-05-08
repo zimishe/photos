@@ -2,12 +2,9 @@
  * Created by eugene on 04.05.2017.
  */
 import React, { Component } from 'react'
-// eslint-disable-next-line
-import store from './../store/store'
 
 import ImageTopPanel from './imageTopPanel'
 import Tooltip from './tooltip'
-import AddIcon from '../../assets/img/add_tooltip.png'
 
 class Image extends Component {
     render() {
@@ -21,6 +18,7 @@ class Image extends Component {
                         <Tooltip key={i}
                                  coords={el}
                                  text={tooltips.text[i]}
+                                 toggleEditField={this.props.toggleEditField}
                                  editTooltipText={this.props.editTooltipText}
                         />
                     )}

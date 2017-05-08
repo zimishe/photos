@@ -11,11 +11,13 @@ import { setTooltipCoords } from '../actions/setTooltipCoordinate'
 import { deleteImage } from '../actions/deleteImage'
 
 // eslint-disable-next-line
-import { deleteRequest } from '../actions/support/requests'
+import { deleteRequest, uploadImageRequest } from '../actions/support/requests'
 // eslint-disable-next-line
 import { editImageRequest } from '../actions/support/requests'
 import { activateTooltipArea } from '../actions/activateTooltipArea'
 import { editTooltipText } from '../actions/editTooltipText'
+import { previewTooltips } from '../actions/previewTooltips'
+
 
 const mapDispatchToProps = function (dispatch) {
     return {
@@ -28,11 +30,11 @@ const mapDispatchToProps = function (dispatch) {
             activateTooltipArea(i, id, e.target.parentNode);
         },
 
-        imageDeleteHandler: function (id, e) {
+        imageDeleteHandler: function (id) {
             let images = store.getState().images,
                 imagesToSet = images.filter(el => el.id !== id);
 
-            // deleteRequest(imagesToSet);
+            deleteRequest(imagesToSet);
             store.dispatch(deleteImage(imagesToSet));
         },
 
@@ -47,32 +49,13 @@ const mapDispatchToProps = function (dispatch) {
 
         imageUploadHandler: function (e) {
             e.preventDefault();
-            console.log('upload handler');
+
+            let dataToSend = new FormData(e.target);
+            uploadImageRequest(dataToSend);
         },
 
         previewTooltips: function(e) {
-            let image = document.querySelector('.image.image__tooltip--selecting'),
-                previewMode = document.querySelector('.image.image__tooltip--visible');
-            
-            if (image !== null) {
-                image.classList.remove('image__tooltip--selecting', 'image__tooltip--adding-text');
-                // image.classList.add('image__tooltip--visible');
-            }
-
-            function getParent(target) {
-
-                if (target.classList.contains('image')) {
-                    target.classList.add('image__tooltip--visible')
-                }   else {
-                    getParent(target.parentNode);
-                }
-            }
-            
-            getParent(e.target);
-            
-            if (previewMode !== null) {
-                previewMode.classList.remove('image__tooltip--visible');
-            }   
+            previewTooltips(e);
         },
         
         editFormToggle: function (e) {

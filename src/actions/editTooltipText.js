@@ -11,26 +11,33 @@ export function editTooltipText(i, id, e) {
         dataToSet = [...tooltips],
         textToSet = e.target.firstChild.value,
         parentImage = document.querySelector('.image__tooltip--adding-text'),
+        parentEditing = document.querySelector('.image__tooltip--editing'),
         // eslint-disable-next-line
         formData = new FormData(e.target),
         tooltip = {};
 
-        // console.log('txxx', dataToSet[i]);
-
     let coords = dataToSet[i].coords,
-        text = dataToSet[i].text;
+        text = dataToSet[i].text,
+        index = Array.from(document.querySelectorAll('.image__tooltip__text')).indexOf(e.target);
 
-    text.push(textToSet);
+    let editedText = [...text];
+
+    if (parentEditing == null) {
+        text.push(textToSet);
+        tooltip.text = text;
+    }   else {
+        editedText[index] = textToSet;
+        tooltip.text = editedText;
+    }
 
     tooltip.id = id;
     tooltip.coords = coords;
-    tooltip.text = text;
 
     dataToSet[i] = tooltip;
+
     store.dispatch(setTooltipCoords(dataToSet));
 
-    parentImage.classList.remove('image__tooltip--adding-text');
+    (parentImage !== null) && parentImage.classList.remove('image__tooltip--adding-text');
+    (parentEditing !== null) && parentEditing.classList.remove('image__tooltip--editing');
     e.target.classList.add('image__tooltip__text--hidden');
-
-    console.log('store2', store.getState().tooltips);
 }

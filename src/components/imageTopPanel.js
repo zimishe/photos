@@ -3,8 +3,7 @@
  */
 
 import React, { Component } from 'react'
-// eslint-disable-next-line
-import store from './../store/store'
+
 import EditPhoto from '../components/editPhoto'
 import EditIcon from '../../assets/img/edit.png'
 import PreviewIcon from '../../assets/img/preview.png'

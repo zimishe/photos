@@ -14,7 +14,6 @@ export function deleteRequest(data) {
     }).then(function (response) {
         console.log('r', response);
     });
-    
 }
 
 export function editImageRequest(data) {
@@ -23,5 +22,14 @@ export function editImageRequest(data) {
         body: data
     }).then(function (response) {
         store.dispatch(editImage(editedState));
+    });
+}
+
+export function uploadImageRequest(data) {
+    fetch('/', {
+        method: 'POST',
+        body: data
+    }).then(function (response) {
+
     });
 }
