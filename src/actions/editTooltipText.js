@@ -18,24 +18,31 @@ export function editTooltipText(i, id, e) {
 
     let coords = dataToSet[i].coords,
         text = dataToSet[i].text,
-        index = Array.from(document.querySelectorAll('.image__tooltip__text')).indexOf(e.target);
+        ind = Array.from(document.querySelectorAll('.image'))[i];
 
-    let editedText = [...text];
+    Array.from(document.querySelectorAll('.image')).forEach(el => el.classList.remove('image__editing--current'));
+
+    ind.classList.add('image__editing--current');
+
+    let index = Array.from(document.querySelectorAll('.image__editing--current .image__tooltip__text')).indexOf(e.target)
 
     if (parentEditing == null) {
         text.push(textToSet);
         tooltip.text = text;
     }   else {
-        editedText[index] = textToSet;
-        tooltip.text = editedText;
+        text[index] = textToSet;
+        tooltip.text = text;
     }
 
+    // tooltip.text = text;
     tooltip.id = id;
     tooltip.coords = coords;
 
     dataToSet[i] = tooltip;
 
     store.dispatch(setTooltipCoords(dataToSet));
+
+    console.log('str', store.getState().tooltips);
 
     (parentImage !== null) && parentImage.classList.remove('image__tooltip--adding-text');
     (parentEditing !== null) && parentEditing.classList.remove('image__tooltip--editing');

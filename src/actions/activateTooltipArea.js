@@ -21,8 +21,6 @@ export function activateTooltipArea(i, id, target) {
             top: e.offsetY - 10
         };
 
-        console.log('et', e.target.parentNode)
-
         if (!target.classList.contains('image__tooltip--adding-text') &&
             !e.target.parentNode.classList.contains('image__show-preview') &&
             !e.target.parentNode.classList.contains('image__edit--toggle') &&

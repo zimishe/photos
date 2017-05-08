@@ -2,7 +2,9 @@ npm install - to install for development
 npm start - to start development
 npm build - to run build 
 
-.js files - in 'src/' directory
+source *.js files - in 'src/' directory
+
+build files - in /build directory
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 

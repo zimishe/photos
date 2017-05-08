@@ -1,7 +1,7 @@
 {
   "name": "photos.loc",
   "version": "0.1.0",
-  "homepage": "./build",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "gulp": "^3.9.1",
