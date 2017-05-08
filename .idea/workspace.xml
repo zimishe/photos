@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e224c1d2-39f1-4fb1-b4d1-9f8f83ab0c7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/container.js" afterPath="$PROJECT_DIR$/src/components/container.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/layouts/_dropdown.scss" afterPath="$PROJECT_DIR$/assets/scss/layouts/_dropdown.scss" />
     </list>
     <ignored path="photos.loc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="container.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="container.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/container.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
@@ -86,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_dropdown.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_dropdown.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/scss/layouts/_dropdown.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="120" column="11" lean-forward="true" selection-start-line="120" selection-start-column="11" selection-end-line="124" selection-end-column="15" />
+            <state relative-caret-position="489">
+              <caret line="134" column="29" lean-forward="false" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -158,9 +159,9 @@
         <option value="$PROJECT_DIR$/src/components/image.js" />
         <option value="$PROJECT_DIR$/src/components/tooltip.js" />
         <option value="$PROJECT_DIR$/src/components/imageTopPanel.js" />
-        <option value="$PROJECT_DIR$/assets/scss/layouts/_dropdown.scss" />
         <option value="$PROJECT_DIR$/src/actions/activateTooltipArea.js" />
         <option value="$PROJECT_DIR$/src/components/container.js" />
+        <option value="$PROJECT_DIR$/assets/scss/layouts/_dropdown.scss" />
       </list>
     </option>
   </component>
@@ -489,12 +490,12 @@
       <workItem from="1493982468257" duration="8645000" />
       <workItem from="1493991135764" duration="6464000" />
       <workItem from="1494227437178" duration="693000" />
-      <workItem from="1494244196898" duration="11190000" />
+      <workItem from="1494244196898" duration="12454000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42054000" />
+    <option name="totallyTimeSpent" value="43318000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -917,14 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/layouts/_dropdown.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="120" column="11" lean-forward="true" selection-start-line="120" selection-start-column="11" selection-end-line="124" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/tooltip.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -969,6 +962,14 @@
           <folding>
             <element signature="e#483#545#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/layouts/_dropdown.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="134" column="29" lean-forward="false" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>

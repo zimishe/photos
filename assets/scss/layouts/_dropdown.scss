@@ -44,15 +44,29 @@
             align-items: center;
             justify-content: center;
             background: #fff;
+            position: relative;
+            
+            &.image__show-preview {
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 43px;
+                    height: 1px;
+                    background: #000;
+                    position: absolute;
+                    left: -6px;
+                    top: 15px;
+                    transition: all .2s ease;
+                    transform-origin: center;
+                    transform: rotate(45deg);
+                    opacity: 1;
+                }
+            }
         }
     }
 
     &__edit {
         position: relative;
-
-        &-toggle {
-
-        }
 
         &__form {
             position: absolute;
@@ -86,6 +100,20 @@
             }
         }
     }
+
+    &.image__tooltip--visible {
+        .image__tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+            
+        .image__show-preview {
+            &:before {
+               opacity: 0;
+            }
+        }
+
+    }
     
     &.image__tooltip--selecting {
         //cursor: url('./../img/cursor.png'), auto;
@@ -99,6 +127,12 @@
             transform: translate(-20px, 0);
             opacity: 0;
             visibility: hidden;
+        }
+        
+        .image__tooltip {
+            visibility: visible;
+            opacity: 1;
+            display: inherit;
         }
 
         &.image__tooltip--adding-text {
@@ -137,6 +171,11 @@
         border-radius: 50%;
         border: 2px solid #000;
         background: #fff;
+        transition: all .2s ease;
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+        box-shadow: 0 0 20px 1px #1976D2;
 
         &__wrap {
             position: absolute;
@@ -145,6 +184,7 @@
                 .image__tooltip__preview  {
                     visibility: visible;
                     opacity: 1;
+                    display: inherit;
                 }
             }
         }
